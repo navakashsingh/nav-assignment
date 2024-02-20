@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:hsl(350, 100%, 88%);
+        }
+        p{
+           display: block;
+           text-align: center;
+        }
+        .form1{
+            width: 300px;
+            height: 300px;
+            display: block;
+            margin: auto;
+        
+        }
+        .form2{
+            width: 300px;
+            height: 300px;
+            display: block;
+            margin: auto;
+            margin-top: 70px;
+        
+        }
+        fieldset{
+            background-color: lightyellow;
+            border-radius: 10px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        <img src="pizza.jpg" alt="Logo pizza" width="200" height="200">
+    </p>
+    <form class="form1">
+    <fieldset>
+        <legend>
+            <b>SELECT YOUR ORDER</b>
+        </legend>
+        <label for="placeorder">Place order for</label>
+        <select name="placeorder">
+            <option value="pickup">Pick up</option>
+            <option value="delivery">Delivery</option>
+        </select><br>
+        <label for="numberpizza">Number of pizzas</label>
+        <input type="number" name="numberpizza"><br>
+        <label for="size">Size (number of slices)</label>
+        <select name="size">
+            <option value="four">4</option>
+            <option value="six">6</option>
+            <option value="eight">8</option>
+            <option value="twelve">12</option>
+        </select><br>
+        <label for="shape">Shape</label>
+        <select name="shape">
+            <option value="square">square</option>
+            <option value="round">Round</option>
+        </select><br>
+        <label for="toppings">Toppings:</label><br>
+        <input type="radio" id="corn" name="corn" value="corn">
+        <label for="corn">Corn</label><br>
+        <input type="radio" id="red onions" name="red onions" value="red onions">
+        <label for="red onions">Red Onions</label><br>
+        <input type="radio" id="jalapenoes" name="jalapenoes" value="jalapenoes">
+        <label for="jalapenoes">Jalapenoes</label><br>
+        <input type="radio" id="spinach" name="spinach" value="spinach">
+        <label for="spinach">Spinach</label><br><br>
+        <label type="crust">Crust Type</label>
+        <select name="crust">
+            <option value="stuffedcrust">Stuffed crust</option>
+            <option value="thincrust">Thin crust</option>
+            <option value="deepdish">Deep dish</option>
+        </select><br><br>
+        <button type="reset" name="reset">Reset</button><br><br>
+        <button type="submit" name="submit">Submit</button><br><br>
+
+    </fieldset>
+    </form>
+     <!--information about client-->
+    <form class="form2">
+        <fieldset>
+            <legend>
+                <b>CLIENT INFORMATION</b>
+            </legend>
+            <label for="firstname">First name</label>
+            <input type="text" id="firstname" name="firstname"><br>
+            <label for="lastname">Last name</label>
+            <input type="text" id="lastname" name="lastname"><br>
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address"><br>
+            <label for="date">Date</label>
+            <input type="date" id="date" name="date"><br>
+            <label for="phone">Telephone</label>
+            <input type="telephone" id="phone" name="phone"><br><br>
+            <button type="reset" name="reset">Reset</button>
+            </fieldset>
+    </form>
+
+</body>
+</html>
